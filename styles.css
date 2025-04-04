@@ -195,7 +195,7 @@ footer {
   .section-intro h1 {
     font-size: 1.8rem;
     line-height: 1.4;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .section-intro .intro-message {
@@ -207,6 +207,8 @@ footer {
     max-width: 95%;
     margin: 0 auto;
     padding-right: 1rem;
+    flex-shrink: 0;
+    margin-bottom: 2.5rem;
   }
 
   .indicator {
