@@ -129,6 +129,12 @@ body {
   transform: scale(1.4);
 }
 
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+}
+
 @media (max-width: 768px) {
   .section {
     flex-direction: column;
