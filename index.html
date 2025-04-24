@@ -7,54 +7,110 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Indicador lateral -->
     <nav class="indicator">
       <ul>
         <li><a href="#intro" data-target="intro"></a></li>
         <li><a href="#sites-falsos" data-target="sites-falsos"></a></li>
+        <li><a href="#sites-falsos2" data-target="sites-falsos2"></a></li>
         <li><a href="#emails-phishing" data-target="emails-phishing"></a></li>
+        <li><a href="#emails-phishing2" data-target="emails-phishing2"></a></li>
         <li><a href="#whatsapp-sms" data-target="whatsapp-sms"></a></li>
+        <li><a href="#whatsapp-sms2" data-target="whatsapp-sms2"></a></li>
         <li><a href="#ligacoes-falsas" data-target="ligacoes-falsas"></a></li>
+        <li><a href="#ligacoes-falsas2" data-target="ligacoes-falsas2"></a></li>
         <li>
           <a
             href="#abordagens-suspeitas"
             data-target="abordagens-suspeitas"
           ></a>
         </li>
+        <li>
+          <a
+            href="#abordagens-suspeitas2"
+            data-target="abordagens-suspeitas2"
+          ></a>
+        </li>
         <li><a href="#historico-golpes" data-target="historico-golpes"></a></li>
+        <li>
+          <a href="#historico-golpes2" data-target="historico-golpes2"></a>
+        </li>
+        <li><a href="#footer" data-target="footer"></a></li>
       </ul>
     </nav>
 
     <main>
-      <!-- Primeira seção com layout único -->
       <section class="section section-intro" id="intro">
         <div class="intro-content">
-          <h1>Projeto Integrador: Segurança para pessoas idosas</h1>
+          <h1>Projeto Integrador: Cibersegurança</h1>
           <div class="intro-video">
             <video width="100%" autoplay muted loop playsinline>
-              <source src="/media/seguranca_idosos.mp4" type="video/mp4" />
+              <source src="./media/seguranca_idosos.mp4" type="video/mp4" />
             </video>
           </div>
           <p class="intro-message">APRENDA A NÃO CAIR EM GOLPES</p>
         </div>
       </section>
 
-      <!-- Demais seções seguem no mesmo padrão -->
-      <section class="section" id="sites-falsos">
+      <section class="section" id="conta-bloqueada">
         <div class="media-placeholder">
           <img
-            src="https://via.placeholder.com/600x400?text=Sites+Falsos"
-            alt="Ilustração sobre sites falsos"
+            src="./media/golpe_conta_bloqueada.png"
+            alt="Criminoso aplicando golpe"
           />
         </div>
         <div class="text-content">
-          <h2>Sites falsos</h2>
+          <h2>Golpe da Conta Bloqueada</h2>
+          <h3>Como funciona?</h3>
           <p>
-            Desconfie de promoções milagrosas e sites com endereços estranhos...
+            Criminosos utilizam dados obtidos de forma ilegal para acessar
+            aplicativos bancários com várias tentativas de senha incorreta até a
+            conta ser bloqueada.
+          </p>
+          <p>
+            Em seguida, os golpistas entram em contato por ligação telefônica,
+            se passando pelo banco, oferecendo “ajuda” para resolver o problema
+            do bloqueio de conta.
+          </p>
+          <p>
+            O objetivo do golpe por ligação telefônica é conseguir acesso à sua
+            conta bancária. Desconfie de ligações, não informe seus dados para
+            ninguém por telefone ou mensagem.
           </p>
           <audio controls>
-            <source src="audio-sites-falsos.mp3" type="audio/mpeg" />
+            <source src="audio-conta-bloqueada.mp3" type="audio/mpeg" />
           </audio>
+        </div>
+      </section>
+
+      <section class="section section-invertida" id="conta-bloqueada2">
+        <div class="text-content">
+          <h2>Golpe da Conta Bloqueada</h2>
+          <h3>Como se proteger?</h3>
+          <ul class="protection-list">
+            <li>
+              Ative a autenticação em DOIS FATORES do seu aplicativo bancário,
+              assim você precisa confirmar sua identidade de duas maneiras.
+            </li>
+            <li>Os bancos NÃO PEDEM SENHAS e dados sensíveis por telefone.</li>
+            <li>
+              NÃO USE o aplicativo do banco enquanto estiver em ligação com
+              qualquer pessoa desconhecida.
+            </li>
+            <li>
+              Caso a conta seja bloqueada, procure o banco diretamente pelo
+              aplicativo ou SITE OFICIAL, e através dos números disponíveis no
+              seu cartão.
+            </li>
+          </ul>
+          <audio controls>
+            <source src="audio-conta-bloqueada.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="media-placeholder">
+          <img
+            src="./media/golpe_conta_bloqueada2.png"
+            alt="Ilustração adicional sites falsos"
+          />
         </div>
       </section>
 
@@ -74,6 +130,25 @@
         </div>
       </section>
 
+      <section class="section section-invertida" id="emails-phishing2">
+        <div class="text-content">
+          <h2>E-mails phishing 2</h2>
+          <p>
+            Verifique sempre o endereço do remetente e desconfie de urgência nas
+            mensagens.
+          </p>
+          <audio controls>
+            <source src="audio-emails.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="media-placeholder">
+          <img
+            src="https://via.placeholder.com/600x400?text=Emails+Phishing+2"
+            alt="Ilustração extra sobre phishing"
+          />
+        </div>
+      </section>
+
       <section class="section" id="whatsapp-sms">
         <div class="media-placeholder">
           <img
@@ -87,6 +162,25 @@
           <audio controls>
             <source src="audio-whatsapp.mp3" type="audio/mpeg" />
           </audio>
+        </div>
+      </section>
+
+      <section class="section section-invertida" id="whatsapp-sms2">
+        <div class="text-content">
+          <h2>Golpes via WhatsApp e SMS 2</h2>
+          <p>
+            Confirme com familiares ou amigos antes de transferir qualquer
+            valor.
+          </p>
+          <audio controls>
+            <source src="audio-whatsapp.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="media-placeholder">
+          <img
+            src="https://via.placeholder.com/600x400?text=WhatsApp+SMS+2"
+            alt="Imagem complementar"
+          />
         </div>
       </section>
 
@@ -106,6 +200,25 @@
         </div>
       </section>
 
+      <section class="section section-invertida" id="ligacoes-falsas2">
+        <div class="text-content">
+          <h2>Ligações falsas 2</h2>
+          <p>
+            Desligue imediatamente e entre em contato com seu banco por canais
+            oficiais.
+          </p>
+          <audio controls>
+            <source src="audio-ligacoes.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="media-placeholder">
+          <img
+            src="https://via.placeholder.com/600x400?text=Ligações+Falsas+2"
+            alt="Imagem adicional"
+          />
+        </div>
+      </section>
+
       <section class="section" id="abordagens-suspeitas">
         <div class="media-placeholder">
           <img
@@ -119,6 +232,25 @@
           <audio controls>
             <source src="audio-abordagens.mp3" type="audio/mpeg" />
           </audio>
+        </div>
+      </section>
+
+      <section class="section section-invertida" id="abordagens-suspeitas2">
+        <div class="text-content">
+          <h2>Abordagens suspeitas 2</h2>
+          <p>
+            Não aceite ajuda de estranhos para sacar dinheiro ou usar
+            maquininhas.
+          </p>
+          <audio controls>
+            <source src="audio-abordagens.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="media-placeholder">
+          <img
+            src="https://via.placeholder.com/600x400?text=Abordagens+Suspeitas+2"
+            alt="Complemento"
+          />
         </div>
       </section>
 
@@ -137,11 +269,39 @@
           </audio>
         </div>
       </section>
+
+      <section class="section section-invertida" id="historico-golpes2">
+        <div class="text-content">
+          <h2>Histórico de golpes 2</h2>
+          <p>
+            Informe-se com fontes confiáveis sobre novos tipos de golpes que
+            surgem.
+          </p>
+          <audio controls>
+            <source src="audio-historico.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="media-placeholder">
+          <img
+            src="https://via.placeholder.com/600x400?text=Histórico+de+Golpes+2"
+            alt="Imagem complementar"
+          />
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <p>Projeto desenvolvido com foco na segurança do público idoso.</p>
-    </footer>
+    <section class="section section-footer" id="footer">
+      <div class="text-content footer-content">
+        <h2>Conecte-se com a gente</h2>
+        <p>Projeto desenvolvido com foco na segurança do público idoso.</p>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/seuusuario" target="_blank"
+            >Instagram</a
+          >
+          <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>
