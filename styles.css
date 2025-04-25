@@ -21,6 +21,33 @@ body {
   flex-direction: row-reverse;
 }
 
+.dark-section {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-section .text-content {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-section .text-content h2 {
+  color: #cc9900;
+}
+
+.dark-section .text-content h3 {
+  color: #fff;
+}
+
+.dark-section .text-content p {
+  color: #fff;
+}
+
+.dark-section .text-content ul,
+.dark-section .text-content li {
+  color: #fff;
+}
+
 .section-intro {
   flex-direction: column;
   align-items: center;
@@ -52,6 +79,7 @@ body {
 
 .media-placeholder {
   width: 50%;
+  height: 100%;
   background-color: #ccc;
   display: flex;
   justify-content: center;
@@ -61,6 +89,7 @@ body {
 
 .media-placeholder img {
   max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -68,7 +97,7 @@ body {
 .text-content {
   width: 50%;
   background-color: #fff;
-  padding: 3rem;
+  padding: 3.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,7 +152,7 @@ body {
 .indicator {
   position: fixed;
   top: 50%;
-  right: 2rem;
+  right: 1rem;
   transform: translateY(-50%);
   z-index: 10;
 }
@@ -153,26 +182,13 @@ body {
   transform: scale(1.4);
 }
 
-.section-footer {
+.section-footer .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  scroll-snap-align: start;
-  background-color: #fff;
-  padding: 2rem;
-}
-
-.section-footer h2 {
-  font-size: 1.5rem;
-  color: #cc9900;
-  margin-bottom: 1rem;
-}
-
-.footer-content {
   text-align: center;
-  max-width: 800px;
+  width: 100%;
 }
 
 .footer-links {
@@ -181,40 +197,30 @@ body {
   margin-top: 1.5rem;
 }
 
-.whatsapp-btn {
+.section-footer p {
+  font-size: 1.5rem;
+}
+
+.whatsapp-btn-icon {
+  background-color: #22db66;
+  border-radius: 50%;
+  width: 74px;
+  height: 74px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
-  border: 1.5px solid #25d366;
-  border-radius: 8px;
-  background-color: white;
-  color: #25d366;
-  font-weight: 600;
-  font-size: 16px;
+  justify-content: center;
   text-decoration: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
 
-.whatsapp-btn:hover {
-  background-color: #25d366;
+.whatsapp-btn-icon i {
   color: white;
+  font-size: 48px;
 }
 
-.whatsapp-btn:hover .whatsapp-icon {
-  filter: brightness(0) invert(1);
-}
-
-.whatsapp-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.whatsapp-text {
-  font-size: 16px;
+.whatsapp-btn-icon:hover {
+  background-color: #5eff9b;
 }
 
 @media (max-width: 768px) {
@@ -226,9 +232,9 @@ body {
   }
 
   .section-intro h1 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: #cc9900;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .media-placeholder {
@@ -237,19 +243,6 @@ body {
 
   .text-content {
     width: 100%;
-  }
-
-  .media-placeholder {
-    height: 200px;
-    padding: 0.5rem;
-  }
-
-  .media-placeholder img {
-    max-height: 100%;
-    object-fit: contain;
-  }
-
-  .text-content {
     flex: 1;
     padding: 0.5rem 0.5rem;
     display: flex;
@@ -281,11 +274,11 @@ body {
   }
 
   .text-content audio {
-    width: 100%;
-    margin-top: 1.5rem;
-    height: 32px;
+    width: 90%;
+    margin: 1.5rem;
+    height: 30px;
     border-radius: 6px;
-    padding: 0;
+    padding: 1;
   }
 
   .section-intro {
@@ -296,12 +289,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-  }
-
-  .section-intro h1 {
-    font-size: 1.4rem;
-    line-height: 1.4;
-    margin-bottom: 4rem;
   }
 
   .section-intro .intro-message {
@@ -332,19 +319,29 @@ body {
     transform: scale(1.2);
   }
 
-  .section-footer {
-    padding: 2rem 1rem;
+  .section-footer p {
+    font-size: 1.2rem;
   }
 
-  .footer-links {
-    flex-direction: column;
-    gap: 1rem;
+  .whatsapp-btn-icon {
+    background-color: #25d366;
+    border-radius: 50%;
+    width: 74px;
+    height: 74px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
   }
 
-  .footer-links a {
-    font-size: 1rem;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+  .whatsapp-btn-icon i {
+    color: white;
+    font-size: 48px;
+  }
+
+  .whatsapp-btn-icon:hover {
+    background-color: #1ebc5a;
   }
 }
