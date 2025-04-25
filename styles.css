@@ -10,7 +10,6 @@ body {
   color: #222;
 }
 
-/* Seções com scroll snap padrão */
 .section {
   display: flex;
   height: 100vh;
@@ -18,12 +17,10 @@ body {
   flex-direction: row;
 }
 
-/* Seções 2 com layout invertido no desktop */
 .section-reverse {
   flex-direction: row-reverse;
 }
 
-/* Seção de introdução */
 .section-intro {
   flex-direction: column;
   align-items: center;
@@ -98,7 +95,7 @@ body {
   text-align: justify;
   font-size: 1.2rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -209,6 +206,12 @@ body {
     scroll-snap-align: start;
   }
 
+  .section-intro h1 {
+    font-size: 1.4rem;
+    color: #cc9900;
+    margin-bottom: 1.5rem;
+  }
+
   .media-placeholder {
     display: none;
   }
@@ -218,7 +221,7 @@ body {
   }
 
   .media-placeholder {
-    height: 240px;
+    height: 200px;
     padding: 0.5rem;
   }
 
@@ -229,7 +232,7 @@ body {
 
   .text-content {
     flex: 1;
-    padding: 1rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
