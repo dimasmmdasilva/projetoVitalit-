@@ -1,6 +1,8 @@
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -65,9 +67,16 @@ body {
 
 .section-intro .intro-video {
   width: 100%;
-  max-width: 850px;
+  max-width: 100%;
   margin: 1rem auto;
   aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.section-intro .intro-video video {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .section-intro .intro-message {
@@ -228,7 +237,8 @@ body {
   .section,
   .section-reverse {
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     scroll-snap-align: start;
   }
 
@@ -236,6 +246,7 @@ body {
     font-size: 1.4rem;
     color: #cc9900;
     margin-bottom: 3rem;
+    margin-top: 2rem;
   }
 
   .media-placeholder {
