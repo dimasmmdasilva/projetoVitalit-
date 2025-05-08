@@ -236,7 +236,7 @@ body {
   .section,
   .section-reverse {
     flex-direction: column;
-    height: auto;
+    height: 100vh;
     scroll-snap-align: start;
   }
 
