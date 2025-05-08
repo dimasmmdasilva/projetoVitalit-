@@ -239,7 +239,7 @@ body {
     margin-top: 4rem;
   }
 
-  .section-intro .intro-video {
+  .section-intro .intro-video video {
     max-width: 350px;
     margin: 1rem auto;
   }
