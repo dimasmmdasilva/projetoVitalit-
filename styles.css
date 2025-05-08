@@ -244,10 +244,6 @@ body {
     scroll-snap-align: start;
   }
 
-  .section-intro intro-content {
-    margin-top: -2rem;
-  }
-
   .section-intro h1 {
     font-size: 1.4rem;
     color: #cc9900;
@@ -268,6 +264,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: -2rem;
   }
 
   .section-intro .intro-message {
