@@ -225,6 +225,14 @@ body {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   .section,
   .section-reverse {
     flex-direction: column;
@@ -235,13 +243,12 @@ body {
   .section-intro h1 {
     font-size: 1.4rem;
     color: #cc9900;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     margin-top: 4rem;
   }
 
   .section-intro .intro-video video {
-    max-width: 350px;
-    height: 450px;
+    max-width: 360px;
     margin: 1rem auto;
   }
 
@@ -302,15 +309,6 @@ body {
   .section-intro .intro-message {
     font-size: 1.2rem;
     margin-top: 1rem;
-  }
-
-  .section-intro .intro-video {
-    max-width: 85%;
-    height: 400px;
-    margin: 0 auto;
-    padding-right: 1rem;
-    flex-shrink: 0;
-    margin-bottom: 1rem;
   }
 
   .indicator {
