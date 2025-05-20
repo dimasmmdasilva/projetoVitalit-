@@ -93,10 +93,6 @@ body {
   object-fit: cover;
 }
 
-.media-placeholder img.contain-image {
-  object-fit: contain;
-}
-
 .text-content {
   width: 50%;
   background-color: #fff;
@@ -239,13 +235,20 @@ body {
   margin-top: 2.5rem;
 }
 
-.footer-fontes h5 {
-  margin-bottom: 0.3rem;
+.footer-fontes h4 {
+  margin-bottom: 0.5rem;
 }
 
-.footer-fontes h6 {
-  margin: 0.2rem 0;
-  font-weight: normal;
+.footer-fontes a {
+  display: block;
+  font-size: 0.8em;
+  color: inherit;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-fontes a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
