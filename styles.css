@@ -121,7 +121,7 @@ body {
 
 .text-content p {
   text-align: justify;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 0.5rem;
   margin-left: 2rem;
@@ -140,14 +140,13 @@ body {
   padding-left: 2.5rem;
   margin-left: 1rem;
   margin-right: 2rem;
-  font-size: 1.4srem;
+  font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
 
 .protection-list li {
   margin-bottom: 1rem;
-  font-size: 1.4srem;
 }
 
 .indicator {
